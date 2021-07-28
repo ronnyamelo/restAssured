@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ApplaudoAPITest" thread-count="1" parallel="tests" verbose="2">
+    <test name="BadBreakingTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="http://automationpractice.com/"></parameter>
+        <classes>
+            <class name="TestClass">
+                <methods>
+                    <include name="getCharacterInfoAndPrint"/>
+                    <include name="getAllCharacters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
