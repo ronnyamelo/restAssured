@@ -32,6 +32,7 @@ public class TestClass extends BaseTest{
 
         getAllCharacters.createRequest();
         getAllCharacters.executeRequest();
+        getAllCharacters.validateResponse();
         getAllCharacters.printAllCharacters();
     }
 
